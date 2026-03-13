@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Linty San</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="img/trolina.jpg">
+</head>
+<body>
+
+
+<audio id="bg-music" loop>
+    <source src="MFS.mp3" type="audio/mpeg">
+	Ваш браузер гандон
+</audio>
+
+<div class="main-wrapper">
+
+    <aside class="side-column left">
+		<img src="http://dl8.glitter-graphics.net/pub/432/432968wwi0anufp3.gif" width=169 height=186 border=0>
+		<img src="img/упячка.gif">
+		<img src="http://dl8.glitter-graphics.net/pub/432/432968wwi0anufp3.gif" width=169 height=186 border=0>
+		<img src="img/упячка.gif">
+		<img src="http://dl8.glitter-graphics.net/pub/432/432968wwi0anufp3.gif" width=169 height=186 border=0>
+	</aside>
+
+    <main class="content">
+	
+	<table>
+    <tr>
+		<td><a href="LintySan.html">LINTY SAN</a></td>
+        <td><a href="MyFriends.html">MY FRIENDS</a></td>
+        <td><a href="Gallery.html">GALLERY</a></td>
+    </tr>
+</table>
+
+<hr>
+
+<!-- Бегущий текст -->
+<marquee scrollamount = "20">
+    <h2>
+		<img src="http://dl7.glitter-graphics.net/pub/713/713407h4mhpozlx9.gif" width=128 height=128 border=0>
+		<span class="text"><a href="https://www.glitter-graphics.com" style="text-decoration: none"><font color=#ff0000>П</font><font color=#f81406>Р</font><font color=#f1280d>О</font><font color=#ea3b14>Х</font><font color=#e44f1a>О</font><font color=#dd6221>Д</font> <font color=#d0852e>Т</font><font color=#c99635>О</font><font color=#c2a63c>Л</font><font color=#bbb543>Ь</font><font color=#b5c249>К</font><font color=#aecf50>О</font> <font color=#a1e35d>С</font> <font color=#93f36b>О</font><font color=#8cf872>Р</font><font color=#86fc78>У</font><font color=#7ffe7f>Ж</font><font color=#78fe86>И</font><font color=#72fe8c>Е</font><font color=#6bfb93>М</font>  <font color=#57eaa7>И</font> <font color=#49d7b5>Н</font><font color=#43ccbb>А</font><font color=#3cbfc2>Р</font><font color=#35b2c9>К</font><font color=#2ea3d0>О</font><font color=#2893d6>Т</font><font color=#2182dd>И</font><font color=#1a70e4>К</font><font color=#145eea>А</font><font color=#0d4bf1>М</font><font color=#0637f8>И</font></a></span>		
+		<img src="http://dl7.glitter-graphics.net/pub/713/713407h4mhpozlx9.gif" width=128 height=128 border=0>
+    </h2>
+</marquee>
+
+<div>
+	<img src="img/linty.gif" width=500px>	
+</div>
+
+<!-- Главная картинка -->
+<div>
+    <img src="img/trolina.jpg" height=500px>
+</div>
+
+<div>
+<button id="play-btn" class="music-button">ЗАВАЙБИ ТВарЬ</button>
+</div>
+
+<div> 
+<img src="http://dl8.glitter-graphics.net/pub/432/432968wwi0anufp3.gif" width=169 height=186 border=0>
+<img src="http://dl8.glitter-graphics.net/pub/432/432968wwi0anufp3.gif" width=169 height=186 border=0>
+<img src="http://dl8.glitter-graphics.net/pub/432/432968wwi0anufp3.gif" width=169 height=186 border=0>
+</div>
+
+<p> Эта страница бебебе бубубу </p>
+
+<div> 
+<img src="http://dl8.glitter-graphics.net/pub/432/432968wwi0anufp3.gif" width=169 height=186 border=0>
+<img src="http://dl8.glitter-graphics.net/pub/432/432968wwi0anufp3.gif" width=169 height=186 border=0>
+<img src="http://dl8.glitter-graphics.net/pub/432/432968wwi0anufp3.gif" width=169 height=186 border=0>
+</div>
+
+<div>
+	<video controls width="500">
+		<source src="img/upachka.mp4" type="video/mp4">
+	</video>
+</div>
+
+<img src="http://dl8.glitter-graphics.net/pub/432/432968wwi0anufp3.gif" width=169 height=186 border=0>
+<img src="http://dl8.glitter-graphics.net/pub/432/432968wwi0anufp3.gif" width=169 height=186 border=0>
+<img src="http://dl8.glitter-graphics.net/pub/432/432968wwi0anufp3.gif" width=169 height=186 border=0>
+
+    </main>
+
+    <aside class="side-column right">
+		<img src="http://dl8.glitter-graphics.net/pub/432/432968wwi0anufp3.gif" width=169 height=186 border=0>
+		<img src="img/упячка.gif">
+		<img src="http://dl8.glitter-graphics.net/pub/432/432968wwi0anufp3.gif" width=169 height=186 border=0>
+		<img src="img/упячка.gif">
+		<img src="http://dl8.glitter-graphics.net/pub/432/432968wwi0anufp3.gif" width=169 height=186 border=0>
+	</aside>
+
+</div>
+
+<script>
+    // Как только пользователь кликнет в любом месте сайта...
+    document.addEventListener('click', function() {
+        var audio = document.getElementById('bg-music');
+        
+        // ...проверяем, не играет ли она уже, и запускаем
+        if (audio.paused) {
+            audio.play().catch(function(error) {
+                console.log("Ошибка запуска: ", error);
+            });
+        }
+    }, { once: true }); // once: true значит, что скрипт сработает только один раз
+	
+	const bgMusic = document.getElementById('bg-music');
+    const allVideos = document.querySelectorAll('video');
+
+    allVideos.forEach(video => {
+        // Когда видео начинают смотреть
+        video.onplay = () => {
+            bgMusic.pause();
+        };
+
+        // Когда видео ставят на паузу или оно кончилось
+        video.onpause = () => {
+            // Проверяем, не играет ли в этот момент какое-то ДРУГОЕ видео
+            const isAnyVideoPlaying = Array.from(allVideos).some(v => !v.paused);
+            if (!isAnyVideoPlaying) {
+                bgMusic.play();
+            }
+        };
+    });
+	
+</script>
+
+</body>
+</html>

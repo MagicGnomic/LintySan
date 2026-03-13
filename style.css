@@ -1,0 +1,123 @@
+/* Центрирование всего контента */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.main-wrapper {
+    display: grid;
+    /* Боковые колонки забирают 1 долю (1fr), центр — фиксированно 800px */
+    grid-template-columns: 1fr 800px 1fr; 
+    min-height: 100vh;
+}
+
+.side-column {
+    /* Путь к твоей гифке */
+    background-image: url(http://dl7.glitter-graphics.net/pub/38/38847ts7clzsjly.gif);
+    background-repeat: repeat; /* Гифка будет дублироваться во все стороны */
+    background-size: 100px; /* Размер одной гифки в сетке (подбери под себя) */
+
+    display: flex;
+    flex-direction: column; /* Выстраивает элементы строго в столбик */
+    align-items: center;    /* Центрирует гифки по горизонтали */
+    gap: 10px;              /* Расстояние между гифками */
+    
+    /* Важно для прокрутки: */
+    height: 100vh;          /* Высота колонки — на весь экран */
+    overflow-y: auto;       /* Если гифок станет больше, чем экран, появится скролл */
+    position: sticky;       /* Колонки будут "прилипать" и стоять на месте при скролле центра */
+    top: 0;
+}
+
+.side-column img {
+    width: 160px;           /* Задай нужную ширину баннеров */
+    height: auto;           /* Чтобы не искажать пропорции */
+    display: block;
+}
+
+.content {
+    background-color: #ccc; /* Цвет фона центра (как на скриншоте) */
+    padding: 20px;
+    text-align: center;
+    overflow-y: auto; /* Чтобы внутри центра работала прокрутка, если текста много */
+}
+
+/* Если экран маленький, сужаем центр */
+@media (max-width: 1000px) {
+    .main-wrapper {
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+}
+.music-button {
+    padding: 10px 20px;
+    background-color: #ff00ff; /* Вырвиглазный розовый */
+    color: white;
+    border: 3px outset #ccc;
+    cursor: pointer;
+    font-family: "Comic Sans MS", cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.music-button:active {
+    border: 3px inset #ccc;
+}
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+	background-color: grey;
+}
+
+/* Таблица меню */
+table {
+    margin: 0 auto; /* центр таблицы */
+    font-size: 24px; /* Увеличиваем шрифт */
+    width: 80%;      /* Увеличиваем общую ширину таблицы */
+    border-collapse: collapse; /* Чтобы границы не «разъезжались» некрасиво */
+
+}
+
+/* Ячейки таблицы */
+td {
+    border: 1px solid #999;
+    padding: 0.3em 1em;
+}
+
+a {
+	color: black;
+}
+
+/* Списки новостей */
+ul {
+    display: inline-block; /* чтобы список был по центру */
+    text-align: left;      /* текст внутри списка слева */
+    margin-top: 20px;
+}
+
+/* Картинки */
+img {
+    margin: 5px; /* отступы между картинками */
+}
+
+/* Бегущий текст */
+img, marquee {
+    vertical-align: middle;
+}
+
+/* Разделительная линия */
+hr {
+    margin: 20px 0;
+}
+
+p {
+    /* Сначала пробуем Comic Sans, если его нет — любой рукописный */
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff00ff; /* Сделаем его ярко-розовым для пущего эффекта */
+}
+

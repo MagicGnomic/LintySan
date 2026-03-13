@@ -1,0 +1,41 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  background-color: #FFFFC2;
+  color: black;
+  font-family: arial;
+  
+   <center>
+        <style>
+		td {
+			border: 1px solid #999;
+			padding: 0.1em 1em;
+			
+			background-color: black;
+			
+			
+			</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td bgcolor="yellow"><a href="https://ru-ranfren.neocities.org/main.html">ГЛАВНАЯ</a></td>
+			<td bgcolor="yellow"><a href="https://ru-ranfren.neocities.org/about.html">О НАС</td>
+        <td bgcolor="yellow"><a href="https://ru-ranfren.neocities.org/characterdata.html">ДАННЫЕ О ПЕРСОНАЖАХ</td>
+        <td bgcolor="yellow"><a href="https://ru-ranfren.neocities.org/comics.html">КОМИКСЫ</td>
+        
+        <td bgcolor="yellow"><a href="https://ru-ranfren.neocities.org/gallery.html">ГАЛЕРЕЯ</a></td>
+        <td bgcolor="yellow"><a href="https://ru-ranfren.neocities.org/links.html">ССЫЛКИ</td> 
+        <td bgcolor="yellow"><a href="https://ru-ranfren.neocities.org/store.html">СКЛАД</td><br>
+        <td bgcolor="yellow"><a href="https://vk.com/monteglover">ВК</a></td>
+        </tr>
+        </table>
+        **********************************************************************<br>
+        </table></center>
+        
+        <center><table>
+  
+  
+}
